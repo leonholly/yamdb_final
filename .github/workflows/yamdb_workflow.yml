@@ -40,10 +40,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v2 
+        uses: docker/build-push-action@v2
         with:
+          file: api_yamdb/Dockerfile
           push: true
-          tags: lemonetch/yamdb_final:latest
+          tags: lemonetch/api_yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
