@@ -3,7 +3,6 @@ from datetime import datetime
 from rest_framework import serializers
 from rest_framework.generics import get_object_or_404
 from rest_framework.validators import UniqueTogetherValidator
-
 from reviews.models import Category, Comment, Genre, Review, Title
 
 
@@ -61,8 +60,7 @@ class CurrentTitleDefault:
     def __call__(self, serializer_field):
         c_view = serializer_field.context['view']
         title_id = c_view.kwargs.get('title_id')
-        title = get_object_or_404(Title, id=title_id)
-        return title
+        return get_object_or_404(Title, id=title_id)
 
     def __repr__(self):
         return f'{self.__class__.__name__}s()'

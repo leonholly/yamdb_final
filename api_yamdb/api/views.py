@@ -1,11 +1,10 @@
-from .filters import TitleFilter
 from django.db.models import Count, Sum
 from django.db.models.functions import Round
 from rest_framework import filters, mixins, permissions, viewsets
 from rest_framework.generics import get_object_or_404
-
 from reviews.models import Category, Genre, Title
 from users.permissions import AdminOrReadOnly, AuthorPermission
+from .filters import TitleFilter
 
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, GetTitleSerializer,
