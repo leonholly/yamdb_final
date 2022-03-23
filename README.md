@@ -73,7 +73,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 уникальным идентификатором = 1 на произведение с 
 уникальным идентификатором = 1.
 
-#### http://localhost/redoc/
+#### http://lemonetch.ddns.net/redoc/
 
 Перейдите по этой ссылке, если хотите посмотреть все доступные запросы к API
 
