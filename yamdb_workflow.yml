@@ -19,7 +19,7 @@ jobs:
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         pip install -r api_yamdb/requirements.txt 
 
-    - name: Test with flake8 and pytest
+    - name: Test with flake8 and django tests
       run: |
         python -m flake8
         pytest
@@ -43,7 +43,7 @@ jobs:
         with:
           file: api_yamdb/Dockerfile
           push: true
-          tags: lemonetch/api_yamdb:latest
+          tags: lemonetch/another_one_btd:latest
 
   deploy:
     runs-on: ubuntu-latest

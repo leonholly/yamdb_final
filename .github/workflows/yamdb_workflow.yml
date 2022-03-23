@@ -43,7 +43,7 @@ jobs:
         with:
           file: api_yamdb/Dockerfile
           push: true
-          tags: lemonetch/api_yamdb:latest
+          tags: lemonetch/another_one_btd:latest
 
   deploy:
     runs-on: ubuntu-latest

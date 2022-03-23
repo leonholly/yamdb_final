@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: lemonetch/infra_web:v1.0
+    image: lemonetch/api_yamdb_new:v1.0
     restart: always
     volumes:
       - static_value:/app/static/
