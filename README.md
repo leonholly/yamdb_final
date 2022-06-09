@@ -1,4 +1,3 @@
-![Run server](https://github.com/leonholly/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ## YaMDB
 ### Описание:
 
